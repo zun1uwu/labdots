@@ -1,0 +1,91 @@
+// -*- mode: jsonc -*-
+{
+    // "layer": "top", // Waybar at top layer
+    "position": "left", // Waybar position (top|bottom|left|right)
+    "height": 1080, // Waybar height (to be removed for auto height)
+    "width": 5, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+        "wlr/taskbar",
+        "custom/media"
+    ],
+    "modules-center": [
+    ],
+    "modules-right": [
+        "tray",
+        "idle_inhibitor",
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "clock"
+    ],
+    "wlr/taskbar": {
+    	"format": "{icon}",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "icon-size": 24,
+        "active-first": false
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "INH",
+            "deactivated": "IDL"
+        }
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%H\n%m}",
+        "tooltip-format": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": "CPU",
+        "tooltip-format": "{}% used"
+    },
+    "memory": {
+        "format": "MEM",
+	"tooltip-format": "{}% used"
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "VOL",
+        "tooltip-format": "{volume} %",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    }
+}
