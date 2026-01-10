@@ -17,3 +17,4 @@ this theme is supposed to work with the following software:
 ## attention
 - the standard keyboard layout is "*de*", so make sure to change it if you need a different one
 - please check and adjust the display settings in kanshi/config
+- furthermore, adjust the wallpaper in labwc/autostart
