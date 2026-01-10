@@ -1,5 +1,7 @@
 # labdots
 
+<img src="https://github.com/zun1uwu/labdots/blob/master/screenshot.png"/>
+
 this theme is supposed to work with the following software:
 - **labwc** as the compositor
 - **waybar** as the bar/panel
