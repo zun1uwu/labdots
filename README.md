@@ -7,6 +7,9 @@ this theme is supposed to work with the following software:
 - **hyprshot** for screenshooting
 - **swaybg** for wallpapers
 - **fuzzel** for launching programs
+- **thunar** as the file manager
+- **papirus** as the icon theme
+- **materia-dark-compact** as the GTK theme
 
 ## attention
 the standard keyboard layout is "*de*", so make sure to change it if you need a different one
