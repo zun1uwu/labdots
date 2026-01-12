@@ -15,6 +15,7 @@ this theme is supposed to work with the following software:
 - **kanshi** for managing display settings
 - **dunst** as the notification daemon
 - **swayidle + swaylock + wlopm** as a for locking the screen
+- **lxsession** as the polkit agent
 
 ## attention
 - the standard keyboard layout is "*de*", so make sure to change it if you need a different one
