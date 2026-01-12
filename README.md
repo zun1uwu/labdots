@@ -14,7 +14,7 @@ this theme is supposed to work with the following software:
 - **materia-dark-compact** as the GTK theme
 - **kanshi** for managing display settings
 - **dunst** as the notification daemon
-- **swayidle + swaylock + wlopm** as a for locking the screen
+- **swayidle + swaylock + wlopm** for locking the screen
 - **lxsession** as the polkit agent
 - **ttf-jetbrains-mono** as the font
 
