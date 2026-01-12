@@ -15,6 +15,8 @@ kanshi >/dev/null 2>&1 &
 # Launch a panel such as yambar or waybar.
 waybar >/dev/null 2>&1 &
 
+lxpolkit >/dev/null 2>&1 &
+
 # To delay the launch of a particular client it is suggested that the following
 # syntax is used: ( sleep X ; foo ) &
 # For example, with waybar a three second delay could be achieved with:
@@ -37,4 +39,3 @@ swayidle -w \
 	timeout 600 'wlopm --off \*' \
 	resume 'wlopm --on \*' \
 	before-sleep 'swaylock -f -c 000000' >/dev/null 2>&1 &
-
