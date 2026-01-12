@@ -16,6 +16,7 @@ this theme is supposed to work with the following software:
 - **dunst** as the notification daemon
 - **swayidle + swaylock + wlopm** as a for locking the screen
 - **lxsession** as the polkit agent
+- **ttf-jetbrains-mono** as the font
 
 ## attention
 - the standard keyboard layout is "*de*", so make sure to change it if you need a different one
