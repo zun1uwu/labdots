@@ -39,7 +39,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:%H\n%m}",
+        "format": "{:%H\n%M}",
         "tooltip-format": "{:%Y-%m-%d}"
     },
     "cpu": {
